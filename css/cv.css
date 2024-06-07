@@ -1,0 +1,269 @@
+#cvpage {
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+  background-image: url('cv_background.jpg');
+  background-size: cover;
+  background-position: center center; /* Add this line */
+}
+
+
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.cc-profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cc-profile-image img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 75px;
+  color: white;
+  font-family: 'Belanosima';
+}
+
+.category {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Increase the margin as desired */
+}
+
+.btn {
+  margin-right: 10px;
+  font-size: 18px;
+  background-color: #1abc9c;
+  border: 2px solid #1abc9c;
+  transition: border-color 0.3s ease;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  border-color: #1abc9c;
+  background-color: #138a6e; /* Change the hover background color to the desired shade of green */
+}
+
+/* CSS for Aryan Mehta Info Section */
+.aryanmehtainfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  width: 70%;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+.aryanmehtainfo1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  width: 70%;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.leftbox,
+.rightbox {
+  flex-basis: 50%; /* Adjust width as desired */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.leftbox h3,
+.leftbox p,
+.rightbox h3 {
+  text-align: left;
+}
+
+.rightbox ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Align list items to the left */
+}
+
+
+.rightbox li {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-indent: 0;
+}
+.leftbox h2,.rightbox h2{
+  font-family: "Merriweather Sans";
+}
+.leftbox p,.rightbox ul{
+  font-family: 'nunito';
+}
+@media (max-width: 1025px){
+
+}
+@media (max-width: 768px) {
+  .aryanmehtainfo {
+    width: 80%;
+  }
+  .aryanmehtainfo1 {
+    width: 80%;
+  }
+
+  .leftbox,
+  .rightbox {
+    flex-basis: 100%;
+  }
+  .leftbox1,
+  .rightbox1 {
+    flex-basis: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #cvpage {
+    min-height: 55vh;
+  }
+  .cc-profile-image {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 60px; /* Increase the font size for 768px breakpoint */
+  }
+
+  .category {
+    font-size: 24px; /* Increase the font size for 768px breakpoint */
+  }
+  .btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 40px; /* Increase the font size for 650px breakpoint */
+  }
+
+  .category {
+    font-size: 18px; /* Increase the font size for 650px breakpoint */
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+/* progess bar */
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #4caf50;
+}
+
+.progress-bar-text {
+  line-height: 10px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Education Box */
+.aryanmehtainfo1{
+  height: 30vh;
+}
+.leftbox1 {
+  background-color: #4caf50;
+  flex-basis: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.rightbox1 {
+  flex-basis: 73%;
+  overflow: auto;
+}
+.rightbox1 h3{
+  text-align: left;
+}
+
+@media (max-width: 780px) {
+  .aryanmehtainfo1{
+    height: auto;
+  }
+  .leftbox1 {
+    flex-basis: 100%;
+    height: 150px;
+  }
+
+  .rightbox1 {
+    flex-basis: 100%;
+    padding: 10px;
+    overflow: auto;
+  }
+}
+.rightbox1 p{
+  font-family: 'nunito';
+  text-align: left;
+
+}
+
+
+/* 820px for ipad  */
+@media (max-width: 1076px) {
+  .aryanmehtainfo1 {
+    height: auto;
+  }
+
+  .leftbox1 {
+    flex-basis: 100%;
+    height: 150px;
+  }
+
+  .rightbox1 {
+    flex-basis: 100%;
+    padding: 10px;
+    overflow: auto;
+  }
+}
